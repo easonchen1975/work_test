@@ -1,0 +1,16 @@
+
+<PROJECT>:=appFramework
+<CONFIG>:=vp6_fpga
+<TARGET>:=Debug
+<FEEDBACK>:=FBmode: Off
+
+<TIE_COMPILE>:=
+<PRE_FINAL>:=
+<OBJS>:=
+<MINSIZE_LINK>:=-Wl,@D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/objfiles.list D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a -o D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/appFramework.minsize -mlsp=D:/eason/gdbio-local-config1015-idma_rtos -Wl,-r -nostdlib -Wl,-Map -Wl,appFramework-minsize.map -lidma-xtos --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params=
+<FINAL>:=
+
+<COMPILE_START>
+src/img_utils.c:=-c -g -O0 -Wall -Werror -fmessage-length=0 -I "D:/work/workspace_config1015_freertos_appframe/appFramework/inc" -I "D:/work/workspace_config1015_freertos_appframe/TileManager/inc" -I "D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2" -DPROC_vp6_fpga -DCONFIG_vp6_fpga -UIDMA_DEBUG --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params= "D:/work/workspace_config1015_freertos_appframe/appFramework/src/img_utils.c" -o "D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o"
+src/appFrameworkMain.c:=-c -g -O0 -Wall -Werror -fmessage-length=0 -I "D:/work/workspace_config1015_freertos_appframe/appFramework/inc" -I "D:/work/workspace_config1015_freertos_appframe/TileManager/inc" -I "D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2" -DPROC_vp6_fpga -DCONFIG_vp6_fpga -UIDMA_DEBUG --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params= "D:/work/workspace_config1015_freertos_appframe/appFramework/src/appFrameworkMain.c" -o "D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o"
+<COMPILE_END>

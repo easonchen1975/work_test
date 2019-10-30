@@ -1,0 +1,342 @@
+Archive member included because of file (symbol)
+
+D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+                              D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o (_ptr_xv_tile_manager)
+D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+                              D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o) (xvmem_init)
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+                              D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o) (g_idma_buf_ptr)
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+                              D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o (idma_log_handler)
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+                              D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o) (idma_task_done_intr_handler_freertos)
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+                              D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o) (idma_print)
+
+Linker script and memory map
+
+LOAD D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+LOAD D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+LOAD D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a
+LOAD D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a
+LOAD D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/xtensa-elf/lib/\libidma-xtos.a
+
+.text           0x00000000     0xbab5
+ *(.literal .text)
+ .literal       0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .text          0x00000000     0x1408 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+                0x00000000                errCallbackFunc
+                0x00000064                intrCallbackFunc
+                0x00000094                processData
+                0x000001c4                idmaLogHander
+                0x000001ec                main
+ .literal       0x00001408        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ *fill*         0x00001408        0x8 
+ .text          0x00001410      0x425 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+                0x00001410                checkImage
+                0x00001544                readPGM
+                0x00001754                writePGM
+ *fill*         0x00001835        0x3 
+ .literal       0x00001838        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ *fill*         0x00001838        0x8 
+ .text          0x00001840     0x5d99 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+                0x00001d70                xvInitIdma
+                0x00001ed8                xvInitTileManager
+                0x0000206c                xvResetTileManager
+                0x000020c0                xvInitMemAllocator
+                0x000022dc                xvAllocateBuffer
+                0x000024a8                xvFreeBuffer
+                0x000025fc                xvFreeAllBuffers
+                0x000026c4                xvAllocateFrame
+                0x000027dc                xvFreeFrame
+                0x00002920                xvFreeAllFrames
+                0x000029a4                xvAllocateTile
+                0x00002ac0                xvFreeTile
+                0x00002c08                xvFreeAllTiles
+                0x00002c8c                xvCreateTileManager
+                0x00002d9c                xvCreateFrame
+                0x00002ec4                xvCreateTile
+                0x00003140                xvAddIdmaRequest
+                0x00003358                solveForX
+                0x00003a94                xvReqTileTransferIn
+                0x0000498c                xvReqTileTransferInFast
+                0x00004df4                xvReqTileTransferInFast16
+                0x00005274                xvReqTileTransferOut
+                0x00005790                xvReqTileTransferOutFast
+                0x00005970                xvReqTileTransferOutFast16
+                0x00005b64                xvCheckForIdmaIndex
+                0x00005bb0                xvCheckTileReady
+                0x000061a8                xvPadEdges
+                0x00006ab0                xvPadEdges16
+                0x00007468                xvCheckInputTileFree
+                0x000074f4                xvGetErrorInfo
+ *fill*         0x000075d9        0x3 
+ .literal       0x000075dc        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ *fill*         0x000075dc        0x4 
+ .text          0x000075e0     0x166c D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+                0x000075e0                xvmem_init
+                0x00007f10                xvmem_alloc
+                0x000083c0                xvmem_free
+                0x000084b8                copyBufferEdgeDataH
+                0x00008794                copyBufferEdgeDataV
+ .text          0x00008c4c        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .literal       0x00008c4c        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ *fill*         0x00008c4c        0x4 
+ .text          0x00008c50     0x2480 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+                0x0000962c                idma_task_processing_i
+                0x00009c2c                queue_task
+                0x00009e64                idma_log_handler
+                0x00009e8c                idma_init_i
+                0x0000a248                idma_enable_i
+                0x0000a268                idma_resume_i
+                0x0000a288                idma_stop_i
+                0x0000a2a8                idma_get_state_i
+                0x0000a2cc                idma_pause_i
+                0x0000a2ec                idma_sleep_i
+                0x0000a56c                idma_init_task_i
+                0x0000a5f4                idma_schedule_task
+                0x0000a620                idma_copy_task_i
+                0x0000a6f4                idma_copy_2d_task_i
+                0x0000a7ec                idma_process_tasks_i
+                0x0000a810                idma_error_details_i
+                0x0000a840                idma_buffer_check_errors_i
+                0x0000a89c                idma_abort_tasks_i
+                0x0000a8ec                idma_init_loop_i
+                0x0000ab3c                schedule_thread_buffer
+                0x0000ad7c                idma_buffer_status_i
+                0x0000b0a8                idma_read_status_reg
+ .literal       0x0000b0d0        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .text          0x0000b0d0      0x266 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+                0x0000b0e8                idma_task_done_intr_handler_freertos
+                0x0000b148                idma_task_err_intr_handler_freertos
+                0x0000b180                idma_register_interrupts
+                0x0000b21c                idma_disable_interrupts
+                0x0000b228                idma_enable_interrupts
+                0x0000b240                idma_thread_id
+                0x0000b250                idma_thread_block
+                0x0000b27c                idma_thread_unblock
+                0x0000b2a8                idma_chan_buf_set
+                0x0000b2f4                idma_chan_buf_get
+ *fill*         0x0000b336        0x2 
+ .literal       0x0000b338        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+ *fill*         0x0000b338        0x8 
+ .text          0x0000b340      0x775 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+                0x0000b9b0                idma_print
+
+.rodata         0x00000000      0xa69
+ .rodata        0x00000000      0x17b D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ *fill*         0x0000017b        0x1 
+ .rodata        0x0000017c      0x14c D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ *fill*         0x000002c8       0x38 
+ .rodata        0x00000300      0x170 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .rodata        0x00000470      0x512 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ *fill*         0x00000982        0x2 
+ .rodata        0x00000984       0xc5 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ *fill*         0x00000a49        0x3 
+ .rodata        0x00000a4c       0x1d D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.data           0x00000000        0xb
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .data          0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .data          0x00000000        0xb D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+                0x00000000                idma_lib_ver
+ .data          0x0000000b        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.dram1.data     0x00000000     0x8c40
+ .dram1.data    0x00000000     0x8c40 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+                0x00000000                xvTMobj
+                0x00000c40                pBankBuffPool1
+
+.dram0.data     0x00000000     0x8648
+ .dram0.data    0x00000000     0x84c0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+                0x00000000                idmaObjBuff
+                0x00000480                cbData
+                0x000004c0                pBankBuffPool0
+ .dram0.data    0x000084c0        0x4 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+                0x000084c0                _ptr_xv_tile_manager
+ *fill*         0x000084c4       0x3c 
+ .dram0.data    0x00008500      0x148 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+                0x00008500                g_idma_buf_ptr
+                0x00008540                g_idma_cntrl
+                0x00008580                g_idmalogbuf
+
+.bss            0x00000000   0x1fa484
+ *(.dynsbss)
+ *(.sbss)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss)
+ .bss           0x00000000   0x1fa440 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+                0x00000000                IMAGE_WIDTH
+                0x00000004                IMAGE_HEIGHT
+                0x00000040                memDstFrame
+ .bss           0x001fa440        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .bss           0x001fa440        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .bss           0x001fa440        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .bss           0x001fa440        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .bss           0x001fa440        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .bss           0x001fa440       0x44 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+                0x001fa440                IDMA_SEMA
+ .bss           0x001fa484        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+ *(COMMON)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .debug_aranges
+                0x00000020       0x20 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .debug_aranges
+                0x00000040       0x20 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .debug_aranges
+                0x00000060       0x20 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .debug_aranges
+                0x00000080       0x20 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .debug_aranges
+                0x000000a0       0x20 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .debug_aranges
+                0x000000c0       0x20 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.debug_pubnames
+                0x00000000      0x7cc
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xe4 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .debug_pubnames
+                0x000000e4       0x3a D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .debug_pubnames
+                0x0000011e      0x2a4 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .debug_pubnames
+                0x000003c2       0x70 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .debug_pubnames
+                0x00000432       0x47 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .debug_pubnames
+                0x00000479      0x1ef D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .debug_pubnames
+                0x00000668      0x143 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .debug_pubnames
+                0x000007ab       0x21 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.debug_info     0x00000000     0xcd88
+ *(.debug_info)
+ .debug_info    0x00000000     0x19ca D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .debug_info    0x000019ca      0xa8b D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .debug_info    0x00002455     0x4359 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .debug_info    0x000067ae     0x129f D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .debug_info    0x00007a4d      0xd44 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .debug_info    0x00008791     0x24da D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .debug_info    0x0000ac6b     0x10f7 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .debug_info    0x0000bd62     0x1026 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.debug_abbrev   0x00000000      0xe21
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x18c D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .debug_abbrev  0x0000018c      0x131 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .debug_abbrev  0x000002bd      0x276 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .debug_abbrev  0x00000533      0x211 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .debug_abbrev  0x00000744       0xc6 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .debug_abbrev  0x0000080a      0x2b4 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .debug_abbrev  0x00000abe      0x1e9 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .debug_abbrev  0x00000ca7      0x17a D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.debug_line     0x00000000     0x41c8
+ *(.debug_line)
+ .debug_line    0x00000000      0x707 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .debug_line    0x00000707      0x29c D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .debug_line    0x000009a3     0x1b85 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .debug_line    0x00002528      0x767 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .debug_line    0x00002c8f       0xe7 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .debug_line    0x00002d76      0xde7 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .debug_line    0x00003b5d      0x291 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .debug_line    0x00003dee      0x3da D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.xt.insn
+ *(.xt.insn)
+ *(.gnu.linkonce.x.*)
+
+.xt.prop        0x00000000     0x3a5c
+ *(.xt.prop)
+ .xt.prop       0x00000000      0x708 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .xt.prop       0x00000708      0x2c4 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .xt.prop       0x000009cc     0x1800 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .xt.prop       0x000021cc      0x474 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .xt.prop       0x00002640       0x3c D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .xt.prop       0x0000267c      0xdc8 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .xt.prop       0x00003444      0x234 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .xt.prop       0x00003678      0x3e4 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+ *(.xt.prop.*)
+ *(.gnu.linkonce.prop.*)
+
+.comment        0x00000000      0x454
+ .comment       0x00000000       0x8e D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .comment       0x0000008e       0x87 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .comment       0x00000115       0x88 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .comment       0x0000019d       0x84 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .comment       0x00000221       0x89 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .comment       0x000002aa       0x89 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .comment       0x00000333       0x8c D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .comment       0x000003bf       0x95 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.xtensa.info    0x00000000      0x1e4
+ .xtensa.info   0x00000000      0x1e4 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/img_utils.o
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tileManager.o)
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a(tmUtils.o)
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(data.o)
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma.o)
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o)
+ .xtensa.info   0x00000000        0x0 D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_print.o)
+
+.xt.lit
+ *(.xt.lit)
+ *(.xt.lit.*)
+ *(.gnu.linkonce.p.*)
+
+.debug.xt.callgraph
+ *(.debug.xt.callgraph .debug.xt.callgraph.* .gnu.linkonce.xt.callgraph.*)
+OUTPUT(D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/appFramework.minsize elf32-xtensa-le)
+
+Memory Configuration
+
+Name             Origin          Length          Used            Unused          Attributes
+*default*        0x00000000      0xffffffff      

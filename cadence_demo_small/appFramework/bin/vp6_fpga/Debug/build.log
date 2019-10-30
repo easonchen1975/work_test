@@ -1,0 +1,28 @@
+**** Incremental Build [星期一, 21 十月 2019 11:29:37] ****
+ Project: appFramework
+ Configuration: vp6_fpga
+ Build Target: Debug
+********************************
+
+"D:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.2-win32\\XtensaTools\\bin\\xt-xcc" -c -g -O0 -Wall -Werror -fmessage-length=0 -I "\"D:/work/workspace_config1015_freertos_appframe/appFramework/inc\"" -I "\"D:/work/workspace_config1015_freertos_appframe/TileManager/inc\"" -I "\"D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2\"" -DPROC_vp6_fpga -DCONFIG_vp6_fpga -UIDMA_DEBUG --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params= "\"D:/work/workspace_config1015_freertos_appframe/appFramework/src/appFrameworkMain.c\"" -o "\"D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/src/appFrameworkMain.o\"" 
+Time taken: 5155 ms 
+
+"D:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.2-win32\\XtensaTools\\bin\\xt-xc++" -Wl,@D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/objfiles.list D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a -o D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/appFramework.minsize -mlsp=D:/eason/gdbio-local-config1015-idma_rtos -Wl,-r -nostdlib -Wl,-Map -Wl,appFramework-minsize.map -lidma-xtos --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params= 
+Time taken: 623 ms 
+
+"D:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.2-win32\\XtensaTools\\bin\\xt-xc++" -Wl,@D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/objfiles.list D:/work/workspace_config1015_freertos_appframe/TileManager/bin/vp6_fpga/Debug/TileManager.a D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a -o D:/work/workspace_config1015_freertos_appframe/appFramework/bin/vp6_fpga/Debug/appFramework -mlsp=D:/eason/gdbio-local-config1015-idma_rtos -Wl,-Map -Wl,appFramework.map -lidma-xtos --xtensa-system=D:/usr/xtensa/XtDevTools/install/builds/RI-2019.2-win32/vp6_fpga/config --xtensa-core=vp6_fpga --xtensa-params= 
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o): In function `idma_task_done_intr_handler_freertos':
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:74: undefined reference to `xQueueGiveFromISR'
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o): In function `idma_register_interrupts':
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:104: undefined reference to `xt_set_interrupt_handler'
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:106: undefined reference to `xt_interrupt_enable'
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:107: undefined reference to `xt_set_interrupt_handler'
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:109: undefined reference to `xt_interrupt_enable'
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:113: undefined reference to `xQueueCreateCountingSemaphore'
+D:/work/workspace_config1015_freertos_appframe/libidma_built_RI_2019_2/bin/vp6_fpga/Debug/libidma_built_RI_2019_2.a(idma_os.o): In function `idma_thread_id':
+D:\work\workspace_config1015_freertos_appframe\libidma_built_RI_2019_2/idma_os.c:167: undefined reference to `xTaskGetCurrentTaskHandle'
+Time taken: 781 ms 
+
+Build error encountered... cannot continue further.
+Total time taken: 6.82 secs
+**** Build Finished [星期一, 21 十月 2019 11:29:44] ****

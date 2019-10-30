@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xxProperties>
+<propertyGroup name="project.information">
+<version value="3.0"/>
+</propertyGroup>
+<propertyGroup name="build.property">
+<buildTarget defaultTarget="Debug"/>
+</propertyGroup>
+<propertyGroup name="build.exclusion.data">
+<buildExclusionDatas>
+<exclusionSet name="Default" selected="1">
+<excludedEntry data="/.*/bin/.*"/>
+<excludedEntry data="/.*/idma_verify_1D_2D/main\.c"/>
+<excludedEntry data="/.*/idma/test_task_poll\.c"/>
+<excludedEntry data="/.*/idma_verify_1D_2D/test_task_2D\.c"/>
+</exclusionSet>
+</buildExclusionDatas>
+</propertyGroup>
+<propertyGroup name="build.auto.includes">
+<exportDirs autoConsumeDirs="true" includeDepDirs="true" mode="auto"/>
+</propertyGroup>
+<propertyGroup name="library.dependencies">
+<libraryDependencies targetMappingRule="1">
+<library config="" libProjName="TileManager" resType="projectType">
+<targetMappings/>
+</library>
+<library config="" libProjName="libFreeRTOS_v1_7" resType="projectType">
+<targetMappings/>
+</library>
+<library config="" libProjName="libidma_built_RI_2019_2" resType="projectType">
+<targetMappings>
+<targetEntry exeTarget="v17" libTarget="FreeRTOS_v1_7"/>
+</targetMappings>
+</library>
+</libraryDependencies>
+</propertyGroup>
+<propertyGroup name="build.custom.steps"/>
+</xxProperties>
